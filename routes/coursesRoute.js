@@ -15,7 +15,7 @@ router.post('/course',async(req,res)=>{
 router.get('/course/:id',async(req,res)=>{
     const _id  = req.params.id
     const result = await courseModel.findById({_id})
-    console.log(result);
+  res.send(result);
 })
 
 
