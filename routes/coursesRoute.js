@@ -1,4 +1,5 @@
 const express = require('express');
+const courseModel = require('../models/coursemodels')
 const { createCoures, getCoures, getCouresById } = require('../routeController/courseControlls');
 const router = express.Router();
 
