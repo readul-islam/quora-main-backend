@@ -11,11 +11,11 @@ exports.getCoures = async(req,res) =>{
     res.send(result)
 
 }
-exports.getCouresById = async(req,res) =>{
-    const _id  = req.params.id
+// exports.getCouresById = async(req,res) =>{
+//     const _id  = req.params.id
     
-    const result = await courseModel.findById({_id})
+//     const result = await courseModel.findById({_id})
   
-    console.log(result);
+//     console.log(result);
 
-}
+// }
