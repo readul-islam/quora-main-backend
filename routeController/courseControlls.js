@@ -7,8 +7,7 @@ exports.createCoures = async(req,res) =>{
 }
 exports.getCoures = async(req,res) =>{
     const result = await courseModel.find({})
-    console.log(result)
-  
+    
     res.send(result)
 
 }
