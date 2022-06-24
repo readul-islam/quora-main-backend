@@ -3,8 +3,8 @@ const { createCoures, getCoures, getCouresById } = require('../routeController/c
 const router = express.Router();
 
 
-router.route('/create-course').post(createCoures)
-router.route('/all-courses').get(getCoures)
+router.route('/course').post(createCoures).get(getCoures)
+
 router.route('/course/:id').get(getCouresById)
 
 
