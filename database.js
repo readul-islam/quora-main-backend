@@ -6,7 +6,7 @@ const dataConnect = () => {
     mongoose.connect(process.env.DB_URI,{
         useNewUrlParser: true,
         useUnifiedTopology: true,
-      	useCreateIndex: true,
+      
 
     }).then((data)=>{
         console.log(data.connections[0].host);
