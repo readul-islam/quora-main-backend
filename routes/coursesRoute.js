@@ -4,10 +4,10 @@ const { createCoures, getCoures, getCouresById } = require('../routeController/c
 const router = express.Router();
 
 
-router.get('/course',async(req,res)=>{
-    const result = await courseModel.find({})
-    res.send(result)
-})
+// router.get('/course',async(req,res)=>{
+//     const result = await courseModel.find({})
+//     res.send(result)
+// })
 router.post('/course',async(req,res)=>{
     const result = await courseModel.create(req.body)
     res.send(result)

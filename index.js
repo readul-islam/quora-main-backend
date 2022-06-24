@@ -1,4 +1,5 @@
 const app = require('./app');
+const courseModel = require('./models/coursemodels')
 const courseRoute = require('./routes/coursesRoute')
 const dataConnect = require('./database')
  require('dotenv').config();
@@ -6,8 +7,13 @@ const dataConnect = require('./database')
 
 dataConnect()
 app.use(courseRoute)
+
 app.get('/',(req,res)=>{
 res.send({success:true})
+})
+app.get('/course',async(req,res)=>{
+    const result = await courseModel.find({})
+    res.send(result)
 })
 
 app.listen(port,()=>{
