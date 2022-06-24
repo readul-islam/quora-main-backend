@@ -3,7 +3,7 @@ const courseModel = require('./models/coursemodels')
 const courseRoute = require('./routes/coursesRoute')
 const dataConnect = require('./database')
  require('dotenv').config();
- const port = process.env.PORT || 5000;
+ const port = process.env.PORT || 8080;
 
 dataConnect()
 app.use(courseRoute)

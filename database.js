@@ -3,7 +3,9 @@ const mongoose = require('mongoose');
 
 
 const dataConnect = () => {
-    mongoose.connect(process.env.DB_URI,{
+    mongoose.connect(
+        process.env.DB_URI 
+        ,{
         useNewUrlParser: true,
         useUnifiedTopology: true,
       
