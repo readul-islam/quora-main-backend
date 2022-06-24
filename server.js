@@ -5,7 +5,9 @@ const dataConnect = require('./database')
 
 dataConnect()
 
-
+app.get('/',(req,res)=>{
+res.send({success:true})
+})
 
 app.listen(port,()=>{
     console.log(port);
